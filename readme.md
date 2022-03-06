@@ -4,6 +4,8 @@ Welcome to the "Django course" and become an expert.
 ## Topics 
 - Installation & Configurations 
 
+## Installation
+
 ### Step 1:
 Install & create virtual environment 
 > pip install virtualenv
@@ -48,5 +50,5 @@ Generate dependance list
 > pip freeze > requirements.txt
 
 Install dependance recursively
-> pip install -r .\requirements.txt
+> pip install -r requirements.txt
 
