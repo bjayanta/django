@@ -2,14 +2,35 @@
 
 {% block content %}
 <div>
-    <h2>Hello world!</h2>
+    <div>
+        <h2>Hi! I am {{ person }}</h2>
+        <p>I am from <mark>{{ address.street_address }}, {{ address.city }}</mark>.</p>
 
-    {{ person }}
-    <ul>
-        {% for interest in interests %}
-        <li>{{ interest }}</li>
-        {% endfor %}
-    </ul>
+        <h3>Interest area:</h3>
+        <ul>
+            {% for interest in interests %}
+            <li>{{ interest }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div>
+        <h2>Cities</h2>
+        <ul>
+            {% for city in cities %}
+            <li><a href="{% url 'member.incity' city.id %}">{{ city }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div>
+        <h2>Interests</h2>
+        <ul>
+            {% for interest in all_interests %}
+            <li><a href="{% url 'member.ininterest' interest.id %}">{{ interest }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
     
 </div>
 {% endblock content %}

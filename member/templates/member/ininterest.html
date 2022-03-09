@@ -1,0 +1,13 @@
+{% extends 'member/base.html' %}
+
+{% block content %}
+<div>
+    <h2>Ininterest: {{ interest }}</h2>
+
+    <ul>
+        {% for person in all_person %}
+        <li>{{ person }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock content %}
