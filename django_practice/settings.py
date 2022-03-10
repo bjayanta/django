@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'models_guide',
     'member',
+    'difference_between_blank_and_null',
 ]
 
 MIDDLEWARE = [
