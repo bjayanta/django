@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'models_guide',
     'member',
     'difference_between_blank_and_null',
+    'contact',
 ]
 
 MIDDLEWARE = [
